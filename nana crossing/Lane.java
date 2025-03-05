@@ -13,7 +13,7 @@ import javafx.scene.transform.Rotate;
  * It includes visual components such as roads, sidewalks, and animated cars.
  * This class handles animating cars moving up and down within the lane
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  ************************************************************************************/
 public class Lane extends Pane
