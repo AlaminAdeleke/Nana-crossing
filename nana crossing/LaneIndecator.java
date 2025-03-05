@@ -5,7 +5,7 @@ import javafx.scene.paint.Color;
  * @title The LaneIndecator class.
  * A class with simplistic visual representation of the lanes
  * 
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version version 1
  **********************************************************************************************************/
 public class LaneIndecator extends Pane
