@@ -77,7 +77,7 @@ public class GameScreen extends Pane
     public void update()
     {
         outputPane.setOutput(backEnd.getLane(), backEnd.getVBucks(), backEnd.getOdds());
-        //lanes.setNanaLane(backEnd.getLane());
+        inputPane.reset.setDisable(!canReset());
     }
     
     public Input getInput()
@@ -172,6 +172,10 @@ public class GameScreen extends Pane
         gameWon = false;
         lanes.setGame();
         canCross = true;
+        inputPane.cross.setDisable(false);
+        inputPane.cross.setOpacity(1.0);
+        inputPane.stop.setDisable(false);
+        inputPane.stop.setOpacity(1.0);         
     }
     
     /****************************************************************************
@@ -179,50 +183,52 @@ public class GameScreen extends Pane
      ***************************************************************************/    
     public void listen()
     {
-        //Events for when the cross button is clicked
-        inputPane.cross.setOnMouseClicked(e ->
+    //Events for when the cross button is clicked
+    inputPane.cross.setOnMouseClicked(e ->
+    {
+        //if on the final lane
+        if(backEnd.lane == 8)
         {
-            //if on the final lane
+            gameWon = true;
+            lanes.setWin();
+            disableAllButtonsExceptReset();
+        }
+        
+        //if player hasn't lost, and successfully crossed
+        if(backEnd.cross() && canCross)
+        {
+            //play click sound
+            click.seek(click.getStartTime());
+            click.play();
+            //play nana walking animation
+            lanes.walk.play();
+            lanes.distance += 91;
+            //go to the next lane
+            backEnd.update();
+            //If on the final lane
             if(backEnd.lane == 8)
             {
-                gameWon = true;
+                //display win
                 lanes.setWin();
+                gameWon = true;
+                disableAllButtonsExceptReset();
             }
+        }
+        //else if the game has not already been won yet, display the losing screen
+        else if(!gameWon)
+        {
+            //play losing sound effect
+            lose.seek(lose.getStartTime());
+            lose.play();
             
-            //if player hasn't lost, and Succesfully crossed
-            if(backEnd.cross() && canCross)
-            {
-                //play click sound
-                click.seek(click.getStartTime());
-                click.play();
-                //play nana walking animation
-                lanes.walk.play();
-                lanes.distance += 91;
-                //go to the next lane,
-                backEnd.update();
-                //If on the final lane,
-                if(backEnd.lane == 8)
-                {
-                    //display win
-                    lanes.setWin();
-                    
-                    gameWon = true;
-                }
-            }
-            //else if the game has not already been won yet, display the loseing screen
-            else if(!gameWon)
-            {
-                //play losing sound effect
-                lose.seek(lose.getStartTime());
-                lose.play();
-                
-                //set the losing screen
-                lanes.setLose();
-                canCross = false;
-            }
-            //update the output
-            update();
-        });
+            //set the losing screen
+            lanes.setLose();
+            canCross = false;
+            disableAllButtonsExceptReset();
+        }
+        //update the output
+        update();
+    });
         
           //Events for when the call warden button is clicked
         inputPane.stop.setOnMouseClicked(e ->
@@ -237,6 +243,8 @@ public class GameScreen extends Pane
                 gameWon = true;
                 lanes.setWin();
                 update();
+                inputPane.stop.setDisable(true);
+                inputPane.stop.setOpacity(0.5);                
             }
         });
         //event for reset button found in app class
@@ -297,5 +305,17 @@ public class GameScreen extends Pane
             inputPane.reset.setEffect(resetGlow);
         });
     } 
+    
+    /************************************************************************************
+     * Method to disable all buttons except reset button when player has ended the game
+     ***********************************************************************************/
+    public void disableAllButtonsExceptReset() 
+    {
+        inputPane.cross.setDisable(true);
+        inputPane.cross.setOpacity(0.5);
+        inputPane.stop.setDisable(true);
+        inputPane.stop.setOpacity(0.5);
+
+    }
     }
     
