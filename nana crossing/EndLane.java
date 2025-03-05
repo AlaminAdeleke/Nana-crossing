@@ -12,7 +12,7 @@ import javafx.scene.transform.Rotate;
  * @title The EndLane class.
  * It includes the visual elements and behavior for the game's endpoint.
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *********************************************************************************/
 public class EndLane extends Lane
