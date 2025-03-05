@@ -156,6 +156,12 @@ public class GameScreen extends Pane
             timeline.stop();
             timeline = null;
         }
+        
+        // Stop all media players
+        for (MediaPlayer mediaPlayer : mediaPlayers) 
+        {
+            mediaPlayer.stop();
+        }
     }
     
     /**********************************************************************
@@ -168,6 +174,9 @@ public class GameScreen extends Pane
         canCross = true;
     }
     
+    /****************************************************************************
+     *  Method to set function for all the buttons used in the game
+     ***************************************************************************/    
     public void listen()
     {
         //Events for when the cross button is clicked
@@ -180,7 +189,7 @@ public class GameScreen extends Pane
                 lanes.setWin();
             }
             
-            //if player hasent lost, and Succesfully crossed
+            //if player hasn't lost, and Succesfully crossed
             if(backEnd.cross() && canCross)
             {
                 //play click sound
@@ -203,9 +212,11 @@ public class GameScreen extends Pane
             //else if the game has not already been won yet, display the loseing screen
             else if(!gameWon)
             {
+                //play losing sound effect
                 lose.seek(lose.getStartTime());
                 lose.play();
                 
+                //set the losing screen
                 lanes.setLose();
                 canCross = false;
             }
