@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Input
+comment0.text=\r\n\ @title\ The\ Input\ class.\r\n\ A\ pane\ containing\ all\ the\ buttons\ used\ in\ the\ game.\r\n\ \r\n\ \r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ version\ 1\r\n
+comment1.params=
+comment1.target=Input()
+comment1.text=\r\n\ Default\ Constructor\ for\ Input\ class\r\n
+numComments=2

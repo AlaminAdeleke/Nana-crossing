@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=EndLane
+comment0.text=\r\n\ @title\ The\ EndLane\ class.\r\n\ It\ includes\ the\ visual\ elements\ and\ behavior\ for\ the\ game's\ endpoint.\r\n\r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ 1\r\n
+comment1.params=y\ x
+comment1.target=EndLane(int,\ int)
+comment1.text=\r\n\ Constructor\ with\ parameters\ for\ EndLane\r\n\ \r\n\ @param\ y\ The\ y-coordinate\ of\ the\ lane\r\n\ @param\ x\ The\ x-coordinate\ of\ the\ lane\r\n
+numComments=2

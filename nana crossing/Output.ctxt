@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Output
+comment0.text=\r\n\ @title\ The\ Output\ Class\r\n\ The\ class\ of\ all\ the\ inputs\ of\ the\ game\ screen\r\n\r\n\ @author\ Alamin\ Adeleke\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=Output()
+comment1.text=\r\n\ Defaualt\ Constructor\ for\ the\ Output\ Class\r\n
+comment2.params=lane\ vBucks\ odds
+comment2.target=void\ setOutput(int,\ int,\ double)
+comment2.text=\r\n\ \ \ \ \ Method\ to\ set\ the\ objects\ of\ the\ class\ and\ set\ based\ on\ the\ input\r\n\ \ \ \ \ \ \ \r\n\ \ \ \ \ @param\ -\ lane,\ player's\ current\ vbucks,\ odds\ of\ success\r\n
+numComments=3

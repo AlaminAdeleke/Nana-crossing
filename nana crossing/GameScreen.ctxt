@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=GameScreen
+comment0.text=\r\n\ @title\ The\ GameScreen\ class.\r\n\ The\ main\ game\ screen\ class,\ where\ all\ components\ of\ the\ game\ are\ managed.\r\n\r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=GameScreen()
+comment2.params=
+comment2.target=void\ update()
+comment3.params=
+comment3.target=Input\ getInput()
+comment4.params=
+comment4.target=boolean\ canReset()
+comment5.params=
+comment5.target=void\ music()
+comment6.params=
+comment6.target=void\ startPlayingSounds()
+comment7.params=
+comment7.target=void\ stopPlayingSounds()
+comment8.params=
+comment8.target=void\ reset()
+comment9.params=
+comment9.target=void\ listen()
+numComments=10

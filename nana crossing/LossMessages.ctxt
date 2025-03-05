@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=LossMessages
+comment0.text=\r\n\ @title\ LossMessage\ Class\r\n\ The\ Game\ class\ contains\ a\ collection\ of\ funny\ losing\ messages\ and\ a\ method\ to\ print\ a\ random\ one.\r\n\r\n\ @authors\ Chukwunonso\ Ekweaga,\ Ashlee\ Muichirahondo\ and\ Alamin\ Adeleke\r\n
+comment1.params=
+comment1.target=java.lang.String\ out()
+comment1.text=\r\n\ Method\ to\ get\ a\ random\ loss\ message\r\n\ @return\ a\ random\ funny\ losing\ message\ from\ the\ MESSAGES\ array.\r\n
+numComments=2
