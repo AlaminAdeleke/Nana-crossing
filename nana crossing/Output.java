@@ -8,7 +8,7 @@ import javafx.scene.text.Font;
  * @title The Output Class
  * The class of all the inputs of the game screen
  *
- * @author Alamin Adeleke
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  **************************************************************/
 public class Output extends Pane
