@@ -13,7 +13,7 @@ import javafx.scene.image.Image;
  * A pane containing all the buttons used in the game.
  * 
  * 
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version version 1
  **********************************************************************************************************/
 public class Input extends Pane
