@@ -9,7 +9,7 @@ import javafx.scene.image.Image;
  * @ The App Class
  * The main app class
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *********************************************************************************/
 public class App extends Application
