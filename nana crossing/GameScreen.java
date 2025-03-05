@@ -17,7 +17,7 @@ import java.util.Random;
  * @title The GameScreen class.
  * The main game screen class, where all components of the game are managed.
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *********************************************************************************/
 public class GameScreen extends Pane
@@ -43,13 +43,15 @@ public class GameScreen extends Pane
     protected Media clickSound = new Media(getClass().getResource("/assets/sounds/click.mp3").toExternalForm());
     protected MediaPlayer click = new MediaPlayer(clickSound);
     protected Media loseSound = new Media(getClass().getResource("/assets/sounds/lose sound.mp3").toExternalForm());
+    protected Media winSound = new Media(getClass().getResource("/assets/sounds/winning sounds/goodresult-82807.mp3").toExternalForm());
     protected MediaPlayer lose = new MediaPlayer(loseSound);
+    protected MediaPlayer win = new MediaPlayer(winSound);
     
     protected List<MediaPlayer> mediaPlayers = new ArrayList<>();
     protected Timeline timeline;
     
     /************************************************************************************************
-     * Default COnstructor for The GameScreen Class
+     * Default Constructor for The GameScreen Class
      ************************************************************************************************/ 
     public GameScreen()
     {
@@ -192,6 +194,9 @@ public class GameScreen extends Pane
             gameWon = true;
             lanes.setWin();
             disableAllButtonsExceptReset();
+            //play victory sound effect
+            win.seek(win.getStartTime());
+            win.play();
         }
         
         //if player hasn't lost, and successfully crossed
@@ -212,6 +217,9 @@ public class GameScreen extends Pane
                 lanes.setWin();
                 gameWon = true;
                 disableAllButtonsExceptReset();
+                //play victory sound effect
+                win.seek(win.getStartTime());
+                win.play();
             }
         }
         //else if the game has not already been won yet, display the losing screen
@@ -244,7 +252,10 @@ public class GameScreen extends Pane
                 lanes.setWin();
                 update();
                 inputPane.stop.setDisable(true);
-                inputPane.stop.setOpacity(0.5);                
+                inputPane.stop.setOpacity(0.5);   
+                //play victory sound effect
+                win.seek(win.getStartTime());
+                win.play();
             }
         });
         //event for reset button found in app class
@@ -315,7 +326,6 @@ public class GameScreen extends Pane
         inputPane.cross.setOpacity(0.5);
         inputPane.stop.setDisable(true);
         inputPane.stop.setOpacity(0.5);
-
     }
     }
     
