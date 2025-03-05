@@ -4,7 +4,7 @@ import javafx.scene.layout.Pane;
 /*********************************************************************************************
  * A scene with the ability to change its root pane
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *********************************************************************************************/
 public class ChangingScene extends Scene 
