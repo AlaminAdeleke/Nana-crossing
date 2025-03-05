@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=GameLogic
+comment0.text=\r\n\ @title\ The\ GameLogic\ class.\r\n\ Controls\ the\ game's\ core\ mechanics,\ tracking\ player\ progress\ and\ chances\ of\ crossing\ lanes.\r\n\ \r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=GameLogic()
+comment1.text=\r\n\ Default\ constructor\ for\ GameLogic\r\n
+comment2.params=
+comment2.target=void\ update()
+comment2.text=\r\n\ Method\ to\ update\ game\ state(cross\ a\ lane)\r\n
+comment3.params=
+comment3.target=void\ reset()
+comment3.text=\r\n\ Method\ to\ reset\ game\ state\r\n
+comment4.params=
+comment4.target=int\ getLane()
+comment5.params=
+comment5.target=int\ getVBucks()
+comment6.params=
+comment6.target=double\ getOdds()
+comment7.params=probability
+comment7.target=boolean\ cross(int)
+comment7.text=\r\n\ Method\ to\ check\ if\ crossing\ is\ successful\ based\ on\ probability\r\n\ \r\n\ @param\ probability\ The\ probability\ to\ check\ against\r\n\ @return\ true\ if\ the\ crossing\ is\ successful,\ false\ otherwise.\r\n
+comment8.params=
+comment8.target=boolean\ cross()
+comment8.text=\r\n\ Method\ to\ check\ if\ crossing\ is\ successful\ based\ on\ current\ odds\r\n\ If\ unsuccessful,\ the\ player's\ money\ (vBucks)\ is\ reset\ to\ zero.\r\n\r\n\ @return\ true\ if\ the\ crossing\ is\ successful,\ false\ otherwise.\r\n
+numComments=9

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=MainView
+comment0.text=\r\n\ @title\ The\ MainView\ Class\r\n\ A\ pane\ consisting\ of\ a\ winning\ screen,\ a\ loosing\ screen,\ and\ the\ main\ game\ view\r\n\r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ 1\r\n
+comment1.params=
+comment1.target=MainView()
+comment1.text=\r\n\ Default\ constructor\ for\ MainView\r\n
+comment2.params=
+comment2.target=void\ setGame()
+comment2.text=\r\n\ Method\ to\ set\ the\ main\ game\ view\r\n
+comment3.params=
+comment3.target=void\ setWin()
+comment3.text=\r\n\ Method\ to\ set\ the\ win\ screen\r\n
+comment4.params=
+comment4.target=void\ setLose()
+comment4.text=\r\n\ Method\ to\ set\ the\ lose\ screen\r\n
+comment5.params=
+comment5.target=void\ reset()
+comment5.text=\r\n\ Method\ to\ reset\ position\ of\ character\r\n
+comment6.params=nana
+comment6.target=void\ walk(javafx.scene.image.ImageView)
+comment6.text=\r\n\ Method\ to\ move\ character\ across\ one\ lane\r\n
+numComments=7

@@ -1,0 +1,22 @@
+#BlueJ class context
+comment0.target=App
+comment0.text=\r\n\ @\ The\ App\ Class\r\n\ The\ main\ app\ class\r\n\r\n\ @author\ Alamn\ Adeleke,\ Chuckwunonso\ Ekweaga,\ Ashlee\ Muchirahondo\r\n\ @version\ 1\r\n
+comment1.params=stage
+comment1.target=void\ start(javafx.stage.Stage)
+comment1.text=\r\n\ Method\ to\ start\ the\ application\r\n
+comment2.params=stage
+comment2.target=void\ listen(javafx.stage.Stage)
+comment2.text=\r\n\ Method\ to\ set\ up\ event\ listeners\r\n\ \r\n\ @param\ stage\ The\ stage\ to\ attach\ event\ listeners\ to.\r\n
+comment3.params=set
+comment3.target=void\ setPay(int)
+comment4.params=set
+comment4.target=void\ setOdds(double)
+comment5.params=set
+comment5.target=void\ setName(java.lang.String)
+comment6.params=
+comment6.target=int\ getPay()
+comment7.params=
+comment7.target=java.lang.String\ getName()
+comment8.params=
+comment8.target=double\ getOdds()
+numComments=9
