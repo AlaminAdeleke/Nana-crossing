@@ -4,7 +4,7 @@ import java.util.Random;
  * @title The GameLogic class.
  * Controls the game's core mechanics, tracking player progress and chances of crossing lanes.
  * 
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *****************************************************************************************************/
 public class GameLogic
