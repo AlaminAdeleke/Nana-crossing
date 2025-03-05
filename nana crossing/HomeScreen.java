@@ -21,7 +21,7 @@ import java.util.List;
  * @title The HomeScreen class.
  * A pane containing a input fields(for odds of success and pay for each succesful crossing) and a  play button
  * 
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version version 1 
  **********************************************************************************************************/
 public class HomeScreen extends Pane
