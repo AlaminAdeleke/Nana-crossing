@@ -14,7 +14,7 @@ import javafx.util.Duration;
  * @title The MainView Class
  * A pane consisting of a winning screen, a loosing screen, and the main game view
  *
- * @author Alamn Adeleke, Chuckwunonso Ekweaga, Ashlee Muchirahondo
+ * @author Alamn Adeleke, Chukwunonso Ekweaga, Ashlee Muchirahondo
  * @version 1
  *********************************************************************************/
 public class MainView extends Pane
